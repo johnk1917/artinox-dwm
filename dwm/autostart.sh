@@ -7,7 +7,7 @@ feh --bg-fill ~/.dwm/wallpaper.jpg
 killall sxhkd dwmbarscripts autostartdwmbar dunst mpd 
 
 # start compositor
-picom &
+picom --config ~/.dwm/picom.conf &
 
 # start sxhkd
 sxhkd &
@@ -16,7 +16,7 @@ sxhkd &
 autostartdwmbar &
 
 # start dunst notification daemon
-dunst &
+dunst -config ~/.dwm/dunstrc &
 
 # start music daemon
 mpd
